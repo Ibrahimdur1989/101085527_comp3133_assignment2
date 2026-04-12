@@ -1,2 +1,14 @@
-<h2>Employee List Component</h2>
-<a routerLink="/employees/add">Add Employee</a>
+
+
+<div class="container">
+    <h2>Employee List</h2>
+
+    <p>Welcome, you are logged in.</p>
+
+    <button (click)="checkSession()">Check Session</button>
+    <button (click)="logout()">Logout</button>
+
+    <br /><br />
+
+    <a routerLink="/employees/add">Add Employee</a>
+</div>
