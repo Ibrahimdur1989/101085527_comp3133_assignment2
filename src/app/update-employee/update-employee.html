@@ -1,1 +1,17 @@
-<h2>Update Employee Component</h2>
+<div class="form-container">
+    <h2>Update Employee</h2>
+
+    <form #updateForm="ngForm" (ngSubmit)="onUpdateEmployee()">
+        <input type="text" name="firstName" [(ngModel)]="firstName" required />
+        <input type="text" name="lastName" [(ngModel)]="lastName" required />
+        <input type="email" name="email" [(ngModel)]="email" required />
+        <input type="text" name="department" [(ngModel)]="department" required />
+        <input type="text" name="position" [(ngModel)]="position" required />
+        <input type="number" name="salary" [(ngModel)]="salary" required />
+        <input type="text" name="profilePicture" [(ngModel)]="profilePicture" required />
+
+        <button type="submit" [disabled]="updateForm.invalid">Update Employee</button>
+    </form>
+
+    <p><a routerLink="/employees">Back to Employee List</a></p>
+</div>

@@ -1,1 +1,17 @@
-<h2>Add Employee Component</h2>
+<div class="form-container">
+    <h2>Add Employee</h2>
+
+    <form #employeeForm="ngForm" (ngSubmit)="onAddEmployee()">
+        <input type="text" name="firstName" [(ngModel)]="firstName" placeholder="First Name" required />
+        <input type="text" name="lastName" [(ngModel)]="lastName" placeholder="Last Name" required />
+        <input type="email" name="email" [(ngModel)]="email" placeholder="Email" required />
+        <input type="text" name="department" [(ngModel)]="department" placeholder="Department" required />
+        <input type="text" name="position" [(ngModel)]="position" placeholder="Position" required />
+        <input type="number" name="salary" [(ngModel)]="salary" placeholder="Salary" required />
+        <input type="text" name="profilePicture" [(ngModel)]="profilePicture" placeholder="Profile Picture" required />
+
+        <button type="submit" [disabled]="employeeForm.invalid">Add Employee</button>
+    </form>
+
+    <p><a routerLink="/employees">Back to Employee List</a></p>
+</div>

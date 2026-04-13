@@ -1,0 +1,16 @@
+.form-container {
+    width: 400px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+input, button {
+    padding: 10px;
+}

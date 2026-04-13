@@ -1,0 +1,41 @@
+.container {
+    width: 90%;
+    margin: 30px auto;
+}
+
+.top-actions {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.search-box {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.search-box input {
+    padding: 8px;
+    min-width: 200px;
+}
+
+.search-box button {
+    padding: 8px 12px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: center;
+    padding: 10px;
+}
+
+img {
+    border-radius: 50%;
+}
